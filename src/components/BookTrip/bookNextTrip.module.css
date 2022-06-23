@@ -1,0 +1,23 @@
+.book__trip__wrapper {
+  padding: 0 1rem;
+  margin-bottom: 5rem;
+}
+
+.book__trip__container > div {
+  text-align: center;
+}
+
+.card__list {
+  margin-top: 3rem;
+}
+
+.card__wrapper {
+  display: flex;
+  color: var(--text-color);
+  gap: 1rem;
+  margin-bottom: 40px;
+}
+
+.card__wrapper p {
+  font-size: 12px;
+}

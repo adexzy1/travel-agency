@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,7 +9,8 @@
 :root {
   --text-font: 'Poppins', sans-serif;
   --heading-font: 'Volkhov', serif;
-  --text-color: #212832;
+  --heading-color: #212832;
+  --text-color: #5e6282;
   --yellow: #f1a501;
 }
 
@@ -15,8 +18,27 @@ body {
   font-family: var(--text-font);
 }
 
+input,
+a,
+select,
+button {
+  color: inherit;
+}
+
 .app {
   width: 1440px;
   max-width: 100%;
   margin: auto;
+}
+
+.title__wrapper > label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 27px;
+}
+
+.title__wrapper > h2 {
+  font-family: var(--heading-font);
+  font-size: 25px;
 }

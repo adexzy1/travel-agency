@@ -1,4 +1,4 @@
-.wrapper {
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,23 +7,23 @@
   font-size: 17px;
 }
 
-.logo,
-.navIcon {
+.logo__container,
+.nav__icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.logo {
+.logo__container {
   width: 5.4rem;
   height: 100%;
 }
 
-.logo > img {
+.logo__container > img {
   width: 100%;
 }
 
-.navIcon {
+.nav__icon {
   font-size: 1.7rem;
 }
 
@@ -32,6 +32,7 @@
   top: 0;
   left: 0;
   background-color: #fff1da;
+  color: var(--text-color);
   height: 100vh;
   width: 50%;
   padding: 20px;
@@ -45,21 +46,20 @@
   list-style: none;
 }
 
-.navLinks > a {
+.nav__links > a {
   text-decoration: none;
   display: block;
-  color: var(--text-color);
   width: 100%;
   padding: 0.5rem;
 }
 
-.navLinks > a:hover {
+.nav__links > a:hover {
   background-color: var(--yellow);
   border-radius: 5px;
   color: white;
 }
 
-.BtnContainer button {
+.Btn__container button {
   background-color: transparent;
   display: block;
   border: 1px solid var(--text-color);
@@ -69,13 +69,13 @@
   margin-left: 0.5rem;
 }
 
-.BtnContainer button:hover {
+.Btn__container button:hover {
   background-color: var(--yellow);
   border: 1px solid var(--yellow);
   color: white;
 }
 
-.BtnContainer select {
+.Btn__container select {
   margin-top: 1.5rem;
   background-color: transparent;
   border: none;
