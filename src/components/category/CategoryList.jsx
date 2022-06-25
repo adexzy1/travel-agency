@@ -1,9 +1,9 @@
 import style from './category.module.css';
 import CategoryCard from './CategoryCard';
-import weather from '../../assets/icons/weather.svg';
-import flight from '../../assets/icons/flight.svg';
-import mic from '../../assets/icons/mic.svg';
-import settings from '../../assets/icons/settings.svg';
+import FlightIcon from '../../assets/icons/FlightIcon';
+import SettingsIcon from '../../assets/icons/SettingsIcon';
+import WeatherIcon from '../../assets/icons/WeatherIcon';
+import MicIcon from '../../assets/icons/MicIcon';
 
 const Category = () => {
   return (
@@ -15,19 +15,19 @@ const Category = () => {
 
       <div className={style.category__list}>
         <CategoryCard
-          icon={weather}
+          icon={<WeatherIcon />}
           label={'Calculated Weather'}
           text={'Built Wicket longer admire do barton vanity itself do in it.'}
         />
 
         <CategoryCard
-          icon={flight}
+          icon={<FlightIcon />}
           label={'Best Flights'}
           text={'Engrossed listening. Park gate sell they west hard for the.'}
         />
 
         <CategoryCard
-          icon={mic}
+          icon={<MicIcon />}
           label={'Local Events'}
           text={
             'Barton vanity itself do in it. Preferd to men it engrossed listening. '
@@ -35,7 +35,7 @@ const Category = () => {
         />
 
         <CategoryCard
-          icon={settings}
+          icon={<SettingsIcon />}
           label={'Customization'}
           text={
             'We deliver outsourced aviation services for military customers'

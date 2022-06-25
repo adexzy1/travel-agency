@@ -1,8 +1,8 @@
 import style from './header.module.css';
-import logo from '../../assets/Logo.svg';
 import Navlinks from './Navlinks';
 import { CgMenuGridR } from 'react-icons/cg';
 import { useState } from 'react';
+import Logo from '../../assets/icons/Logo';
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className={style.header__wrapper}>
       <section className={style.logo__container}>
-        <img src={logo} alt="logo" />
+        <Logo />
       </section>
 
       <section

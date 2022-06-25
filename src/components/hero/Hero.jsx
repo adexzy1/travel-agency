@@ -1,14 +1,13 @@
-import bgBlob from '../../assets/Decore.svg';
-import heroImg from '../../assets/heroimg.svg';
-import underline from '../../assets/underline.svg';
+import heroImg from '../../assets/hero-img.png';
 import { BiPlay } from 'react-icons/bi';
 import style from './hero.module.css';
+import PatternBlob from '../../assets/icons/PatternBlob';
 
 const Hero = () => {
   return (
     <section className={style.hero__wrapper}>
       <section className={style.hero__pattern_wrapper}>
-        <img src={bgBlob} alt="bg" />
+        <PatternBlob />
       </section>
 
       <section className={style.hero__details__container}>
@@ -20,11 +19,8 @@ const Hero = () => {
           <h5>Best Destinations around the world</h5>
 
           <h1>
-            Travel,{' '}
-            <span className="underline">
-              enjoy
-              <img className={style.underline} src={underline} alt="undrline" />
-            </span>{' '}
+            Travel, <span className={style.underlined__text}> enjoy </span>{' '}
+            <br />
             and live a new and full life
           </h1>
 

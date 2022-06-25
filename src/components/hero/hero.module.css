@@ -11,7 +11,7 @@
   right: 0;
 }
 
-.hero__pattern_wrapper > img {
+.hero__pattern_wrapper > svg {
   width: 100%;
   height: 100%;
 }
@@ -48,24 +48,28 @@
   color: var(--heading-color);
 }
 
-.hero__details > h1 > span {
-  position: relative;
-}
-
-.underline {
-  position: absolute;
-  left: -1.3rem;
-  bottom: 0.6rem;
-  width: 14rem;
-  height: 0.5rem;
-  z-index: -1;
-}
-
 .hero__details > p {
   font-size: 13px;
   color: var(--text-color);
   padding: 1.5rem 0;
   line-height: 25px;
+}
+
+.underlined__text {
+  position: relative;
+}
+
+.underlined__text::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: -2rem;
+  right: -2rem;
+  height: 0.5rem;
+  z-index: -1;
+  background-image: url('../../assets/underline.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .btn__container {

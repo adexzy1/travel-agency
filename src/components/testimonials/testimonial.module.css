@@ -1,0 +1,7 @@
+.testimonial__wrapper {
+  padding: 0 1rem;
+}
+
+.testimonial__wrapper > section {
+  text-align: center;
+}

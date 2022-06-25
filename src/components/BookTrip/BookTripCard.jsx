@@ -3,9 +3,7 @@ import style from './bookNextTrip.module.css';
 const BookTripCard = ({ icon, title, text }) => {
   return (
     <section className={style.card__wrapper}>
-      <div>
-        <img src={icon} alt={title} />
-      </div>
+      {icon}
 
       <div>
         <h5>{title}</h5>

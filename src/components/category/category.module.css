@@ -1,29 +1,21 @@
 .category__wrapper {
   padding: 0 1rem;
-  margin-bottom: 105px;
+  margin-bottom: 4rem;
 }
 
 .category__wrapper :first-child {
   text-align: center;
 }
 
-.category__wrapper > div {
-  margin-bottom: 3rem;
-}
-
 .category__list > :nth-child(2) {
   box-shadow: 0px 8.15px 80px 0px rgba(0, 0, 0, 0.15);
-  width: 267px;
-  height: 290px;
-}
-
-.category__list > :nth-child(2) > img {
-  width: 7rem;
 }
 
 .card__wrapper {
   text-align: center;
-  padding: 1rem;
+  width: 250px;
+  max-width: 100%;
+  padding: 3rem 1.3rem;
   margin: auto;
   margin-bottom: 1rem;
   display: flex;
@@ -31,12 +23,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 36px;
-}
-
-.card__wrapper > img {
-  width: 4rem;
-  display: block;
-  margin: 0 auto;
 }
 
 .card__wrapper > label {

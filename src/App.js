@@ -3,6 +3,7 @@ import CategoryList from './components/category/CategoryList';
 import DestinationList from './components/destination/DestinationList';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
+import Testimonial from './components/testimonials/Testimonial';
 import './index.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <CategoryList />
       <DestinationList />
       <BookTripList />
+      <Testimonial />
     </div>
   );
 }
