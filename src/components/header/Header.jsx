@@ -23,6 +23,7 @@ const Header = () => {
       <nav className={`${style.nav} ${toggle && style.toggle}`}>
         <ul>
           <Navlinks text={'Desitnations'} link={'#'} />
+
           <Navlinks text={'Hotels'} link={'#'} />
 
           <Navlinks text={'Flights'} link={'#'} />

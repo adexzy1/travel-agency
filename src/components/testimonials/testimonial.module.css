@@ -5,3 +5,20 @@
 .testimonial__wrapper > section {
   text-align: center;
 }
+
+.slider__control2 {
+  display: flex;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.slider__control2 > div {
+  width: 10px;
+  height: 10px;
+  background-color: #e5e5e5;
+  border-radius: 100%;
+}
+
+.slider__control2 div:first-child {
+  background-color: var(--heading-color);
+}

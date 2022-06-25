@@ -1,5 +1,5 @@
 .slider__container {
-  margin: 3rem 0;
+  margin-top: 3rem;
   max-width: 100%;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
   justify-content: center;
 }
 
-.slider_control {
+.slider_control1 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -20,12 +20,8 @@
   font-size: 1.5rem;
 }
 
-.slider_control svg {
+.slider_control1 svg {
   cursor: pointer;
-}
-
-.slider_control div:first-child {
-  background-color: var(--heading-color);
 }
 
 .slider__card__wrapper {
@@ -61,11 +57,4 @@
 .slider__details__container > strong {
   display: block;
   padding: 20px 0 0;
-}
-
-@media only screen and (min-width: 380px) {
-  .slidercard__img__container {
-    top: -2rem;
-    left: -1rem;
-  }
 }
