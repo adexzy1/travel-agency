@@ -3,6 +3,7 @@ import Navlinks from './Navlinks';
 import { CgMenuGridR } from 'react-icons/cg';
 import { useState } from 'react';
 import Logo from '../../assets/icons/Logo';
+import PatternBlob from '../../assets/icons/PatternBlob';
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -42,6 +43,9 @@ const Header = () => {
           </select>
         </section>
       </nav>
+      <section className={style.hero__pattern_wrapper}>
+        <PatternBlob />
+      </section>
     </header>
   );
 };

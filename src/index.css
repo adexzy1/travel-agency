@@ -9,9 +9,11 @@
 :root {
   --text-font: 'Poppins', sans-serif;
   --heading-font: 'Volkhov', serif;
-  --heading-color: #212832;
+  --heading-color: #181e4b;
   --text-color: #5e6282;
   --yellow: #f1a501;
+  --outer-paddingX: 5%;
+  --font-size: clamp(0.812rem, 1.1vw, 1.5rem);
 }
 
 body {
@@ -39,24 +41,32 @@ button {
 }
 
 .title__wrapper > label {
-  font-size: 12px;
-  font-weight: 600;
+  font-size: var(--font-size);
+  font-weight: 500;
   color: var(--text-color);
-  line-height: 27px;
+  line-height: 3rem;
 }
 
 .title__wrapper > h2 {
   font-family: var(--heading-font);
-  font-size: 25px;
+  font-size: clamp(25px, 4vw, 3.2rem);
+  font-weight: 700;
+  color: var(--heading-color);
 }
 
 .nav__links > a {
   display: block;
-  width: 100%;
   padding: 0.5rem 0;
 }
 
 .nav__links > a:hover,
 .nav__links:focus {
   color: var(--yellow);
+}
+
+/* media queries */
+@media only screen and (min-width: 1024px) {
+  :root {
+    --outer-paddingX: 10%;
+  }
 }

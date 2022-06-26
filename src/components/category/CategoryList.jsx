@@ -4,10 +4,15 @@ import FlightIcon from '../../assets/icons/FlightIcon';
 import SettingsIcon from '../../assets/icons/SettingsIcon';
 import WeatherIcon from '../../assets/icons/WeatherIcon';
 import MicIcon from '../../assets/icons/MicIcon';
+import CategoryBgPattern from '../../assets/icons/CategoryBgPattern';
 
 const Category = () => {
   return (
     <section className={style.category__wrapper}>
+      <section className={style.catgory__bg__pattern}>
+        <CategoryBgPattern />
+      </section>
+
       <div className="title__wrapper">
         <label>CATEGORY</label>
         <h2>We Offer Best Services</h2>

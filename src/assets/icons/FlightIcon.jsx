@@ -3,9 +3,9 @@ import React from 'react';
 const FlightIcon = () => {
   return (
     <svg
-      width="168"
-      height="154"
-      viewBox="0 0 168 154"
+      width="92"
+      height="78"
+      viewBox="24.99 42 112.05 79.01"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
