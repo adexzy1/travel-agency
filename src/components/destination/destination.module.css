@@ -1,6 +1,6 @@
 .destination__list__wrapper {
-  padding: 0 1rem;
-  margin-bottom: 5rem;
+  padding-inline: var(--outer-paddingX);
+  margin-bottom: 105px;
 }
 
 .destination__list__wrapper :first-child {
@@ -52,4 +52,13 @@
 .destination__card__details svg {
   font-size: 20px;
   color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  .destination__list__container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 7vh;
+  }
 }

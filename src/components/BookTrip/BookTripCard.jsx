@@ -1,16 +1,7 @@
 import style from './bookNextTrip.module.css';
 
-const BookTripCard = ({ icon, title, text }) => {
-  return (
-    <section className={style.card__wrapper}>
-      {icon}
-
-      <div>
-        <h5>{title}</h5>
-        <p>{text}</p>
-      </div>
-    </section>
-  );
+const BookTripCard = ({ children }) => {
+  return <section className={style.card__wrapper}>{children}</section>;
 };
 
 export default BookTripCard;

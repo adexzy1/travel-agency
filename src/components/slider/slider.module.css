@@ -1,43 +1,44 @@
 .slider__container {
-  margin-top: 3rem;
-  max-width: 100%;
+  margin-top: 7rem;
+  margin-inline: auto;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 500px;
   display: flex;
   align-items: center;
-  gap: 5px;
 }
 
 .slider__wrapper {
   margin-top: 1rem;
-  display: flex;
-  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.slider__wrapper > section:last-child {
+  top: -5rem;
+  left: -0.5rem;
 }
 
 .slider_control1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 15px;
-  font-size: 1.5rem;
-}
-
-.slider_control1 svg {
-  cursor: pointer;
+  display: none;
 }
 
 .slider__card__wrapper {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 13rem;
   background-color: #fff;
   box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.08);
-  padding: 1.5rem;
-  /* width: 330px; */
+  padding: clamp(1rem, 3vw, 5rem);
   border-radius: 10px;
 }
 
 .slidercard__img__container {
   width: 3.2rem;
-  height: auto;
   position: absolute;
-  top: -2.5rem;
+  top: -2rem;
   left: -0.5rem;
 }
 
@@ -46,15 +47,55 @@
 }
 
 .slider__details__container {
-  font-size: 12px;
+  font-size: var(--font-size);
   color: var(--text-color);
 }
 
 .slider__details__container > p {
-  line-height: 1.3rem;
+  line-height: 180%;
 }
 
 .slider__details__container > strong {
   display: block;
   padding: 20px 0 0;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 600px) {
+  .slidercard__img__container {
+    width: 4rem;
+    height: auto;
+    position: absolute;
+    top: -1.5rem;
+    left: -1.7rem;
+  }
+
+  .slider__wrapper > section:last-child {
+    top: -6rem;
+    left: -3rem;
+  }
+
+  .disable {
+    color: rgba(0, 0, 0, 0.08);
+  }
+
+  .slider_control1 svg {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .slider__container {
+    margin-top: 3rem;
+  }
+
+  .slider_control1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2.5rem;
+    font-size: clamp(0.7rem, 5vw, 1.8rem);
+    margin-top: 5rem;
+  }
 }

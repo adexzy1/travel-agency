@@ -1,21 +1,17 @@
 .book__trip__wrapper {
-  padding: 0 1rem;
-  margin-bottom: 3rem;
+  padding-inline: var(--outer-paddingX);
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .book__trip__wrapper > div {
   text-align: center;
 }
 
-.book__trip__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.trip_To_greece_Wrapper {
-  padding: 3rem 0;
-  position: relative;
+.book__trip__wrapper br {
+  display: none;
 }
 
 .backdrop {
@@ -25,29 +21,28 @@
   right: -1rem;
 }
 
-.trip_To_greece_Wrapper p {
-  font-weight: 500;
-  font-size: 14px;
-  padding: 5px 0;
-}
-
 /* Big card section (trip to greece) */
 
 .trip_To_greece__bigcard {
   position: relative;
-  min-width: 200px;
-  max-width: 300px;
-  padding: 15px;
-  padding-bottom: 20px;
-  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.08);
+  padding: min(3%, 1rem);
+  margin-bottom: 3rem;
+  width: clamp(250px, 80vw, 350px);
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.08),
+    3.5rem -4rem 6rem rgba(89, 177, 230, 0.3);
   border-radius: 26px;
   background-color: #fff;
-  backdrop-filter: blur(50px);
+}
+
+.trip_To_greece__bigcard p {
+  font-weight: 500;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  padding-block: 5%;
 }
 
 .trip_To_greece__bigcard > span {
   color: var(--text-color);
-  font-size: 0.7rem;
+  font-size: var(--font-size);
   display: block;
   padding-bottom: 5px;
 }
@@ -75,11 +70,12 @@
   display: flex;
   align-items: baseline;
   gap: 10px;
+  padding-block: 2vh;
 }
 
 .bigcard__footer > span {
   padding: 0;
-  font-size: 13px;
+  font-size: var(--font-size);
   color: var(--text-color);
 }
 
@@ -89,17 +85,17 @@
   background-color: #ffff;
   box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.08);
   display: flex;
-  width: 200px;
+  max-width: 263px;
   border-radius: 15px;
-  padding: 14px 15px;
+  padding: min(3vh, 1.2rem) 1.5rem;
   gap: 10px;
   position: absolute;
-  right: -1rem;
-  top: 12rem;
+  right: -2vh;
+  top: 30vh;
 }
 
 .small__card__img_container > img {
-  width: 35px;
+  width: 50px;
   border-radius: 50%;
 }
 
@@ -107,18 +103,19 @@
   flex: 1;
 }
 
-.small__card__details > span {
-  font-size: 11px;
-  display: block;
+.small__card__details > p {
+  font-weight: 500;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  padding-block: 0;
 }
 
-.small__card__details > p {
-  padding: 0;
-  font-size: 12px;
+.small__card__details > span {
+  display: block;
+  color: var(--text-color);
 }
 
 .smallcard_progress__bar > p {
-  font-size: 9px;
+  font-size: clamp(14px, 1vw, 16px);
 }
 
 .smallcard_progress__bar span {
@@ -128,7 +125,7 @@
 
 .progress_container {
   width: 100%;
-  height: 3px;
+  height: 5px;
   background-color: #f5f5f5;
   border-radius: 30px;
 }
@@ -142,30 +139,59 @@
 
 /* Booktrip card section */
 
+.card__list > div {
+  padding-bottom: 5vh;
+}
+
 .card__wrapper {
   display: flex;
   color: var(--text-color);
   gap: 1rem;
-  margin-bottom: 40px;
+  margin-bottom: 5vh;
 }
 
 .card__wrapper > svg {
   width: 4.3rem;
 }
 
+.card__wrapper h5 {
+  font-size: var(--font-size);
+}
+
 .card__wrapper p {
-  font-size: 12px;
+  font-size: var(--font-size);
 }
 
 /* media queries */
 
-@media only screen and (min-width: 380px) {
+@media only screen and (min-width: 600px) {
   .trip_To_greece__smallcard {
-    right: -3rem;
+    width: 263px;
+    right: -8.4vw;
+    top: 13rem;
   }
 
   .backdrop {
     top: -4rem;
     right: -3.5rem;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .book__trip__wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 15%;
+    margin-bottom: 105px;
+  }
+
+  .trip_To_greece__bigcard {
+    justify-self: baseline;
+    margin-right: auto;
+    margin-top: 5rem;
+  }
+
+  .book__trip__wrapper br {
+    display: block;
   }
 }

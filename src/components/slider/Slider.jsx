@@ -10,9 +10,10 @@ const Slider = () => {
     <section className={style.slider__container}>
       <div className={style.slider__wrapper}>
         <SliderCard />
+        <SliderCard />
       </div>
 
-      <div className={style.slider_control}>
+      <div className={style.slider_control1}>
         <MdKeyboardArrowUp />
         <MdKeyboardArrowDown />
       </div>

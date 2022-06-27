@@ -7,7 +7,9 @@ const Testimonial = () => {
       <div>
         <section className="title__wrapper">
           <label>Testimonials</label>
-          <h2>What people say about Us.</h2>
+          <h2>
+            What People Say <br /> About Us.
+          </h2>
         </section>
 
         <div className={style.slider__control2}>
@@ -17,9 +19,7 @@ const Testimonial = () => {
         </div>
       </div>
 
-      <div>
-        <Slider />
-      </div>
+      <Slider />
     </section>
   );
 };

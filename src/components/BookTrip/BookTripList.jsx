@@ -8,37 +8,50 @@ import DestinationIcon from '../../assets/icons/DestinationIcon';
 const BookTripList = () => {
   return (
     <section className={style.book__trip__wrapper}>
-      <div className="title__wrapper">
-        <label>Easy and Fast</label>
-        <h2>Book your next trip in 3 easy steps</h2>
-      </div>
+      <TripToGreece />
 
-      <section className={style.book__trip__container}>
-        <TripToGreece />
+      <section className={style.card__list}>
+        <div className="title__wrapper">
+          <label>Easy and Fast</label>
+          <h2>
+            Book Your Next Trip <br /> In 3 Easy Steps
+          </h2>
+        </div>
 
-        <section className={style.card__list}>
-          <BookTripCard
-            icon={<DestinationIcon />}
-            title={'Choose Destination'}
-            text={`Lorem ipsum dolor sit amet, consectetur  adipiscing elit. Urna, tortor tempus.`}
-          />
+        <BookTripCard>
+          <DestinationIcon />
+          <div>
+            <h5>Choose Destination</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit.
+              Urna, tortor tempus.
+            </p>
+          </div>
+        </BookTripCard>
 
-          <BookTripCard
-            icon={<PaymentIcon />}
-            title={'Make Payment'}
-            text={
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.'
-            }
-          />
+        <BookTripCard>
+          <PaymentIcon />
 
-          <BookTripCard
-            icon={<CarIcon />}
-            title={'Reach Airport on Selected Date'}
-            text={
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.'
-            }
-          />
-        </section>
+          <div>
+            <h5>Make Payment</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit.
+              Urna, tortor tempus.
+            </p>
+          </div>
+        </BookTripCard>
+
+        <BookTripCard>
+          <CarIcon />
+
+          <div>
+            <h5>Reach Airport on Selected Date</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit.
+              Urna, tortor tempus.
+            </p>
+          </div>
+        </BookTripCard>
       </section>
     </section>
   );
