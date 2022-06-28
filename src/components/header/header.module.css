@@ -5,7 +5,6 @@
   padding-block: 1.5rem;
   padding-inline: var(--outer-paddingX);
   position: relative;
-  font-size: 17px;
 }
 
 .hero__pattern_wrapper {

@@ -1,23 +1,26 @@
 form {
-  background-color: #dfd7f9;
-  padding: 2rem;
+  background-color: rgba(223, 215, 249, 0.3);
+  padding: 5% 10%;
   color: var(--text-color);
   text-align: center;
-  margin: 5rem 1rem 0;
-  border-radius: 5px;
-  border-top-left-radius: 4rem;
+  margin: 5rem var(--outer-paddingX);
+  border-radius: 20px 20px 20px 20px;
   position: relative;
+}
+
+form br {
+  display: none;
 }
 
 .send__icon {
   position: absolute;
-  right: -0.5rem;
-  top: -0.8rem;
-  font-size: 1.5rem;
+  right: -1rem;
+  top: -1rem;
+  font-size: 3rem;
   color: #fff;
   background: linear-gradient(201.65deg, #747def, #5e3be1);
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,13 +29,12 @@ form {
 
 .top__spiral,
 .bottom__spiral {
-  position: absolute;
   display: none;
 }
 
 form p {
   font-weight: 500;
-  font-size: small;
+  font-size: clamp(0.8rem, 2vw, 2.06rem);
   padding-top: 1rem;
 }
 
@@ -46,7 +48,7 @@ form p {
   display: flex;
   font-size: 1.5rem;
   align-items: center;
-  padding-left: 0.5rem;
+  padding-left: 3%;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -61,6 +63,7 @@ form p {
   border: none;
   padding: 10px;
   outline: none;
+  font-size: var(--font-size);
 }
 
 .form__group > button {
@@ -72,4 +75,58 @@ form p {
   background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
   color: #fff;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 500px) {
+  form {
+    border-radius: 129px 20px 20px 20px;
+  }
+
+  form br {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form__group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .form__input__wrapper {
+    width: 50%;
+    height: 68px;
+  }
+
+  .form__group > button {
+    margin-inline: unset;
+    height: 68px;
+    width: 180px;
+  }
+
+  .top__spiral {
+    position: absolute;
+    display: block;
+  }
+
+  .top__spiral {
+    top: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .bottom__spiral {
+    position: absolute;
+    display: block;
+  }
+
+  .bottom__spiral {
+    bottom: 0;
+    left: -5rem;
+    z-index: -1;
+  }
 }

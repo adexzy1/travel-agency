@@ -9,7 +9,7 @@ const ContactFormBottomSpiral = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g opacity="0.1">
+      <g opacity="0.2">
         <mask
           id="mask0_1_470"
           maskUnits="userSpaceOnUse"

@@ -19,8 +19,8 @@
 
 .slider__control2 {
   display: flex;
-  gap: 10px;
-  margin-top: 2rem;
+  gap: 1.5rem;
+  margin-top: 5vh;
 }
 
 .slider__control2 > div {
@@ -49,6 +49,5 @@
 
   .slider__control2 {
     margin-top: 5rem;
-    gap: 1.5rem;
   }
 }

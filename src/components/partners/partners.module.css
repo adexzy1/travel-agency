@@ -1,9 +1,8 @@
 .partners__container {
-  margin: 3rem 0;
-  padding: 0 1rem;
+  padding-inline: var(--outer-paddingX);
   display: flex;
   flex-wrap: wrap;
-  flex-basis: auto;
+  margin-bottom: 105px;
 }
 
 .Partners__card {

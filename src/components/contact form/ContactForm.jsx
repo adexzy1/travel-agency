@@ -11,13 +11,17 @@ const ContactForm = () => {
         <ContactFormTopSpiral />
       </div>
 
+      <div className={style.bottom__spiral}>
+        <ContactFormBottomSpiral />
+      </div>
+
       <div className={style.send__icon}>
         <IoIosSend />
       </div>
 
       <p>
-        Subscribe to get information, latest news and other interesting offers
-        about Cobham
+        Subscribe to get information, latest news and other <br /> interesting
+        offers about Cobham
       </p>
 
       <div className={style.form__group}>
@@ -27,10 +31,6 @@ const ContactForm = () => {
         </div>
 
         <button>Subscribe</button>
-      </div>
-
-      <div className={style.bottom__spiral}>
-        <ContactFormBottomSpiral />
       </div>
     </form>
   );

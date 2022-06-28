@@ -9,10 +9,12 @@ import AppleLogo from '../../assets/icons/AppleLogo';
 const Footer = () => {
   return (
     <footer>
-      <section>
+      <section className={style.footer__items}>
         <div className={style.footer__logo__container}>
           <h2>Jadoo.</h2>
-          <p>Book your trip in minute, get full Control for much longer.</p>
+          <p>
+            Book your trip in minute, get full <br /> Control for much longer.
+          </p>
         </div>
 
         <div className={style.quick__links}>

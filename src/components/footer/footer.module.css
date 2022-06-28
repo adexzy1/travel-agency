@@ -1,6 +1,6 @@
 footer {
-  padding: 1rem;
-  margin: 5rem 0 2rem;
+  padding-inline: var(--outer-paddingX);
+  margin: 6.5625rem 0 2rem;
   font-size: 13px;
   color: var(--text-color);
 }
@@ -10,20 +10,20 @@ footer h5 {
   color: #000;
 }
 
-footer > section {
+.footer__items {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
 .footer__logo__container h2 {
-  font-size: 1.7rem;
+  font-size: clamp(1.7rem, 5vw, 2.75rem);
   font-weight: 500;
   padding-bottom: 15px;
 }
 
 .quick__links > h5 {
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 3vw, 1.3125rem);
   padding-bottom: 10px;
 }
 
@@ -103,4 +103,13 @@ footer > section {
 .subfooter {
   text-align: center;
   padding-top: 3rem;
+}
+
+/* media queries */
+@media only screen and (min-width: 768px) {
+  .footer__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
