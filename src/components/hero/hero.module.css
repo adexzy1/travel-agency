@@ -49,15 +49,14 @@
 .underlined__text {
   display: inline-block;
   position: relative;
-  width: 7rem;
-  max-width: 100%;
 }
 
 .underlined__text::after {
   content: '';
   position: absolute;
   bottom: 10px;
-  width: 100%;
+  left: -2rem;
+  right: -2rem;
   height: 10px;
   z-index: -1;
   background-image: url('../../assets/underline.svg');

@@ -50,4 +50,8 @@
   .slider__control2 {
     margin-top: 5rem;
   }
+
+  .testimonial__wrapper br {
+    display: block;
+  }
 }
